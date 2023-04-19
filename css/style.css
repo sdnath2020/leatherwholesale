@@ -1,0 +1,277 @@
+/* TEMPLATE STYLE */
+
+/* Bootstrap CSS @import */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css');
+
+/* Fonts @import */
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap'); /* font-family: 'Viaoda Libre', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); /* font-family: 'Roboto', sans-serif; */
+
+/* eBay Image Style */
+img {
+  max-width: 100% !important;
+}
+
+.dev2020-body-wrapper {
+  background-color: #f3eeeb;
+  padding: 3rem 0 4rem;
+}
+
+.template-wrapper {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.247) 0px 0px 8px 0px;
+}
+
+.template-top-banner {
+  background-color: #34353b;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.template-product-title {
+  color: #1e120c;
+  padding: 2.5rem 2rem 1rem;
+  text-align: center;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.template-product-title h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.template-product-image {
+  padding: 1rem 2rem;
+}
+
+.template-product-image-holder {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.template-product-description {
+  padding: 1rem 2rem 2rem;
+}
+
+
+
+.template-links {
+  padding: 1rem 2rem;
+}
+
+.template-links-single {
+  padding: 1rem;
+}
+
+.template-links-single a {
+  display: block;
+  width: 200px;
+  color: #34353b;
+  margin: 0 auto;
+  padding: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 1.25rem;
+  background-color: #ffffff;
+  /* box-shadow: rgba(0, 0, 0, 0.498) 0px 0px 8px; */
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.8s ease;
+}
+
+.template-links-single a:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+
+.template-links-single a:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+.template-links-single img {
+  width: 1.5rem;
+  margin-right: 0.25rem;
+}
+
+
+
+
+.template-contact {
+  padding: 3rem;
+  background-color: #34353b;
+  text-align: center;
+}
+
+.template-contact > div > div {
+  padding: 1rem;
+  color: #ffffff;
+  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.template-contact a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none !important;
+  color: #ffffff;
+  background-color: #393a3f;
+  border: 1px solid #666666;
+  transition: all 0.8s ease;
+}
+
+.template-contact a:hover {
+  background-color: #7d583b;
+  border-color: #7d583b;
+}
+
+
+
+.template-tab-wrapper {
+  padding: 3rem 2rem;
+}
+
+.template-tab-wrapper > label {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  margin: 0.75rem auto 0;
+  padding: 0.75rem 3.5rem 0.75rem 2rem;
+  color: #ffffff;
+  background-color: #34353b;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  line-height: 2rem;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.template-tab-wrapper > label::after {
+  content: "\002B";
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 0;
+  right: 0;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  text-align: center;
+}
+
+.template-tab-wrapper > label[for=tabs_01] {
+  margin-top: 0;
+}
+
+.template-tab-control {
+  margin-left: -2px;
+  margin-bottom: -2px;
+}
+
+.template-tab-control label {
+  cursor: pointer;
+  margin: 2px;
+  padding: 0.75rem 1.5rem;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #ffffff;
+  background-color: #393a3f;
+  transition: all 0.8s ease;
+}
+
+.template-tab-control label:hover {
+  background-color: #7d583b;
+}
+
+.template-tab-content {
+  display: none;
+  padding: 1.5rem;
+  border: 1px solid #e9e9e9;
+}
+
+
+#tabs_01:checked ~ label[for=tabs_01]::after,
+#tabs_02:checked ~ label[for=tabs_02]::after,
+#tabs_03:checked ~ label[for=tabs_03]::after,
+#tabs_04:checked ~ label[for=tabs_04]::after {
+  content: "\2212";
+}
+
+#tabs_01:checked ~ .template-tab-control label[for=tabs_01],
+#tabs_02:checked ~ .template-tab-control label[for=tabs_02],
+#tabs_03:checked ~ .template-tab-control label[for=tabs_03],
+#tabs_04:checked ~ .template-tab-control label[for=tabs_04] {
+  background-color: #7d583b;
+}
+
+#tabs_01:checked ~ div[for=tabs_01],
+#tabs_02:checked ~ div[for=tabs_02],
+#tabs_03:checked ~ div[for=tabs_03],
+#tabs_04:checked ~ div[for=tabs_04] {
+  display: block;
+}
+
+
+
+.template-footer {
+  padding: 2rem 3rem;
+  color: #ffffff;
+  background-color: #34353b;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 767px) {
+  .template-links {
+    display: none;
+  }
+  .template-tab-wrapper > label {
+    display: block;
+  }
+  .template-tab-control {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .container,
+  .dev2020-body-wrapper {
+    padding: 0;
+  }
+  .template-top-banner {
+    padding: 0 0 0.5rem;
+  }
+  .template-product-title,
+  .template-product-image,
+  .template-product-description,
+  .template-contact,
+  .template-tab-wrapper,
+  .template-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
