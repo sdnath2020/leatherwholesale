@@ -8,6 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); /* font-family: 'Roboto', sans-serif; */
 
+* {
+  /* --DarkColor : #34353b; */
+  --DarkColor: #ec0101;
+}
+
 /* eBay Image Style */
 img {
   max-width: 100% !important;
@@ -25,7 +30,7 @@ img {
 }
 
 .template-top-banner {
-  background-color: #34353b;
+  background-color: var(--DarkColor);
   text-align: center;
   padding: 1rem 2rem;
 }
@@ -82,7 +87,7 @@ img {
   background-color: #ffffff;
   /* box-shadow: rgba(0, 0, 0, 0.498) 0px 0px 8px; */
   box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
-  transition: all 0.8s ease;
+  transition: all 0.2s ease;
 }
 
 .template-links-single a:hover {
@@ -103,7 +108,7 @@ img {
 
 .template-contact {
   padding: 3rem;
-  background-color: #34353b;
+  background-color: var(--DarkColor);
   text-align: center;
 }
 
@@ -123,19 +128,21 @@ img {
   margin: 0 auto;
   line-height: 2.5rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1.5px;
   font-family: 'Roboto', sans-serif;
   text-decoration: none !important;
   color: #ffffff;
-  background-color: #393a3f;
-  border: 1px solid #666666;
+  background-color: transparent;
+  border: 2px solid #ffffff;
   transition: all 0.8s ease;
 }
 
 .template-contact a:hover {
-  background-color: #7d583b;
-  border-color: #7d583b;
+  /* background-color: #7d583b; */
+  /* border-color: #7d583b; */
+  color: #1e120c;
+  background-color: #ffffff;
 }
 
 
@@ -195,7 +202,8 @@ img {
 }
 
 .template-tab-control label:hover {
-  background-color: #7d583b;
+  /* background-color: #7d583b; */
+  background-color: var(--DarkColor);
 }
 
 .template-tab-content {
@@ -216,7 +224,8 @@ img {
 #tabs_02:checked ~ .template-tab-control label[for=tabs_02],
 #tabs_03:checked ~ .template-tab-control label[for=tabs_03],
 #tabs_04:checked ~ .template-tab-control label[for=tabs_04] {
-  background-color: #7d583b;
+  /* background-color: #7d583b; */
+  background-color: var(--DarkColor);
 }
 
 #tabs_01:checked ~ div[for=tabs_01],
@@ -231,7 +240,7 @@ img {
 .template-footer {
   padding: 2rem 3rem;
   color: #ffffff;
-  background-color: #34353b;
+  background-color: var(--DarkColor);
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
